@@ -32,7 +32,7 @@ const StarAnimation = ({ durationRange = [10, 24], interval = 150 }) => {
             {stars.map((star) => (
                 <div
                     key={star.id}
-                    className="absolute bg-gray-700 rounded-full"
+                    className="absolute bg-white rounded-full"
                     style={{
                         width: `${star.size}px`,
                         height: `${star.size}px`,
