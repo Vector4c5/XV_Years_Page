@@ -1,5 +1,6 @@
 import StarAnimation from "@/components/common/StartAnimation";
 import Countdown from "@/components/common/Countdown";
+import BackgroundMusic from "@/components/common/BackgroundMusic";
 import { Tangerine } from 'next/font/google'
 import Link from "next/link";
 
@@ -17,6 +18,9 @@ export default function invitacion() {
             <div className="z-0 opacity-30">
                 <StarAnimation />
             </div>
+           <BackgroundMusic audioSrc="/Musica_1_Ed_Sheran.mp3" initialVolume={0.2} />
+           
+
 
             <div className="relative w-full h-screen overflow-hidden">
                 <div className="absolute inset-0 z-0 w-full h-full">

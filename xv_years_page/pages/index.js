@@ -1,4 +1,5 @@
 import StarAnimation from "@/components/common/StartAnimation";
+import BackgroundMusic from "@/components/common/BackgroundMusic";
 import { Tangerine } from 'next/font/google'
 import Link from "next/link";
 
@@ -14,6 +15,7 @@ export default function Home() {
       className="flex h-screen w-full flex-col items-center justify-center bg-vic-6"
     >
       <StarAnimation />
+      <BackgroundMusic audioSrc="/Musica_1_Ed_Sheran.mp3" initialVolume={0.2} />
       <div className="fixed inset-0 z-0 w-full h-full">
         <img
           src="/Fondo_Vic_4.png"
