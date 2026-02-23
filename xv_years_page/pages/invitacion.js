@@ -62,10 +62,10 @@ export default function Invitacion() {
                         <Countdown targetDate="2026-03-28T18:00:00" />
                     </div>
                     <div className="flex flex-col items-center justify-center pb-8">
-                        <h2 className={`text-5xl sm:text-4xl md:text-5xl lg:text-7xl text-center font-bold text-white border-b-2 border-white ${tangerine.className}`}>
+                        <h2 className={`text-5xl sm:text-4xl md:text-5xl lg:text-8xl xl:text-9xl text-center font-bold text-white border-b-2 border-white ${tangerine.className}`}>
                             Una nueva etapa comienza, y quiero compartirla contigo
                         </h2>
-                        <p className={`text-white text-3xl sm:text-base md:text-lg lg:text-2xl text-center mt-4 max-w-3xl ${tangerine.className}`}>
+                        <p className={`text-white text-3xl sm:text-base md:text-lg lg:text-3xl xl:text-4xl text-center mt-4 max-w-3xl ${tangerine.className}`}>
                             Aylin Maritza Hernandez Maldonado
                         </p>
                     </div>
@@ -84,14 +84,14 @@ export default function Invitacion() {
                             alt="Inicio"
                             className="w-64 h-auto"
                         />
-                        <p className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                        <p className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                             Hoy mi vida florece en quince primaveras,
                         </p>
-                        <p className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                        <p className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                             guiada por el amor de mi familia
                             y acompañada por quienes han sido parte de mi historia.
                         </p>
-                        <p className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                        <p className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                             Con alegría, te invito a celebrar este momento conmigo.
                         </p>
                     </div>
@@ -108,16 +108,16 @@ export default function Invitacion() {
                 </div>
                 <div
                     className=" w-11/12 z-10 relative mx-auto flex flex-col items-center justify-center p-2 sm:p-6 md:p-8 ">
-                    <h1 className={`text-white text-4xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl mb-4 ${cormorantGaramond.className}`}>
+                    <h1 className={`text-white text-4xl text-center sm:text-base md:text-lg lg:text-4xl xl:text-5xl max-w-3xl mb-4 ${cormorantGaramond.className}`}>
                         Mis padres
                     </h1>
-                    <p className={`text-white text-4xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                    <p className={`text-white text-4xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                         Hector Rafael Hernandez
                     </p>
-                    <p className={`text-white text-4xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                    <p className={`text-white text-4xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                         y
                     </p>
-                    <p className={`text-white text-4xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                    <p className={`text-white text-4xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                         Maritza Maldonado
                     </p>
                 </div>
@@ -129,7 +129,7 @@ export default function Invitacion() {
                     shadow-2xl rounded-lg">
                     <div
                         className="flex flex-col items-center justify-start w-full h-auto border-2 border-amber-300 px-4 py-4 gap-2">
-                        <h1 className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl mb-2 ${cormorantGaramond.className}`}>
+                        <h1 className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-4xl xl:text-5xl max-w-3xl mb-2 ${cormorantGaramond.className}`}>
                             Ubicaciones
                         </h1>
                         <div className="flex flex-col items-center justify-center w-full gap-4 p-1 border-b-2 border-vic-1">
@@ -137,22 +137,22 @@ export default function Invitacion() {
                                 <GiChurch size={90} />
                             </div>
                             <div className="flex flex-col items-center justify-center px-4 py-2 rounded">
-                                <h1 className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${cormorantGaramond.className}`}>
+                                <h1 className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${cormorantGaramond.className}`}>
                                     Ceremonia Religiosa
                                 </h1>
-                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                                    6:00 PM
                                 </p>
-                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                                     Parroquia San Marcos Evangelista
                                 </p>
-                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                                     Ave. 5 y, Vicente Guerrero, Centro, 33620 Saucillo, Chih.
                                 </p>
                                 
                                 <Link
                                     href="https://maps.app.goo.gl/sfFrAUgeguQ1roia6?g_st=aw"
-                                    className={`px-10 sm:px-5 sm:py-2.5 md:px-6 md:py-3 bg-vic-4 text-white text-xl sm:text-base md:text-lg lg:text-2xl 
+                                    className={`px-10 sm:px-5 sm:py-2.5 md:px-6 md:py-3 bg-vic-4 text-white text-xl sm:text-base md:text-lg lg:text-3xl xl:text-4xl 
                                     rounded-lg sm:rounded-xl mt-2 sm:mt-3 md:mt-4 ${cormorantGaramond.className} border border-vic-1 sm:border-2
                                     transform transition-all duration-300 ease-out hover:scale-110 hover:bg-vic-4 hover:text-black`}
                                 >
@@ -165,22 +165,22 @@ export default function Invitacion() {
                                 <FaGlassCheers size={90} />
                             </div>
                             <div className="flex flex-col items-center justify-center px-4 py-2 rounded">
-                                <h1 className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${cormorantGaramond.className}`}>
+                                <h1 className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${cormorantGaramond.className}`}>
                                     Recepcion
                                 </h1>
-                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                                    8:00 PM
                                 </p>
-                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                                     El Muelle de San Blas
                                 </p>
-                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-2xl max-w-3xl ${tangerine.className}`}>
+                                <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                                    2PW2+V5 Piedra de Lumbre, Chihuahua
                                 </p>
                                 
                                 <Link
                                     href="https://maps.app.goo.gl/bzAbxvpq67meRcKYA?g_st=aw"
-                                    className={`px-10 sm:px-5 sm:py-2.5 md:px-6 md:py-3 bg-vic-4 text-white text-xl sm:text-base md:text-lg lg:text-2xl 
+                                    className={`px-10 sm:px-5 sm:py-2.5 md:px-6 md:py-3 bg-vic-4 text-white text-xl sm:text-base md:text-lg lg:text-3xl xl:text-4xl 
                                     rounded-lg sm:rounded-xl mt-2 sm:mt-3 md:mt-4 ${cormorantGaramond.className} border border-vic-1 sm:border-2
                                     transform transition-all duration-300 ease-out hover:scale-110 hover:bg-vic-4 hover:text-black`}
                                 >
@@ -197,7 +197,7 @@ export default function Invitacion() {
             </div>
 
             <div className="relative w-full overflow-hidden py-10 sm:py-10 md:py-12 border-b-2 border-vic-6">
-                <div className="w-11/12 z-10 relative mx-auto h-80 sm:h-96 md:h-screen lg:h-96 rounded-lg overflow-hidden shadow-2xl">
+                <div className="w-11/12 z-10 relative mx-auto h-56 sm:h-64 md:h-72 lg:h-80 rounded-lg overflow-hidden shadow-2xl">
                     <div className="relative w-full h-full flex">
                         {photos.map((photo, index) => (
                             <img
