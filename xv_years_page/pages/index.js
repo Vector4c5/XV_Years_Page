@@ -39,9 +39,9 @@ export default function Home() {
             </div>
             <div className="w-3/4 h-auto sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-auto border-2 sm:border-3 md:border-4 border-vic-5 overflow-hidden bg-vic-1">
               <img
-                src="/Foto_2.png"
+                src="/0N1A0048.jpg"
                 alt="Foto_De_XV"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-center scale-200"
               />
             </div>
             <div
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <Link
               href="/invitacion"
-              className={`px-5 py-1 sm:px-5 sm:py-2.5 md:px-6 md:py-3 bg-vic-3 text-white text-2xl sm:text-base md:text-lg lg:text-2xl 
+              className={`px-5 py-1 sm:px-5 sm:py-2.5 md:px-6 md:py-3 bg-vic-3 text-white text-3xl sm:text-base md:text-lg lg:text-2xl 
                 rounded-lg sm:rounded-xl mt-2 sm:mt-3 md:mt-4 ${tangerine.className} border border-vic-1 sm:border-2
                 transform transition-all duration-300 ease-out hover:scale-110 hover:bg-vic-4 hover:text-black`}
             >
