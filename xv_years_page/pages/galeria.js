@@ -1,9 +1,10 @@
+import StarAnimation from "@/components/common/StartAnimation";
 import BackgroundMusic from "@/components/common/BackgroundMusic";
 import { Tangerine } from "next/font/google";
 import { Cormorant_Garamond } from "next/font/google";
 import Link from "next/link";
 import { FaTimes } from "react-icons/fa";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const tangerine = Tangerine({
 	subsets: ["latin"],
@@ -17,6 +18,7 @@ const cormorantGaramond = Cormorant_Garamond({
 
 export default function Galeria() {
 	const [selectedPhoto, setSelectedPhoto] = useState(null);
+	const [mixedPhotos, setMixedPhotos] = useState([]);
 	const photos = useMemo(
 		() => [
 			"/0N1A0005.jpg",
@@ -78,26 +80,72 @@ export default function Galeria() {
 		[]
 	);
 
-	const mixedPhotos = useMemo(() => {
-		const orderedPhotos = [];
-		let leftIndex = 0;
-		let rightIndex = photos.length - 1;
+	useEffect(() => {
+		let isCancelled = false;
 
-		while (leftIndex <= rightIndex) {
-			orderedPhotos.push(photos[leftIndex]);
-			if (leftIndex !== rightIndex) {
-				orderedPhotos.push(photos[rightIndex]);
+		const loadImageOrientation = (src) =>
+			new Promise((resolve) => {
+				const image = new window.Image();
+				image.onload = () => {
+					const isPortrait = image.naturalHeight > image.naturalWidth;
+					const isLandscape = image.naturalWidth > image.naturalHeight;
+					resolve({ src, orientation: isPortrait ? "portrait" : isLandscape ? "landscape" : "square" });
+				};
+				image.onerror = () => resolve({ src, orientation: "unknown" });
+				image.src = src;
+			});
+
+		const buildMixedOrder = async () => {
+			const resolved = await Promise.all(photos.map(loadImageOrientation));
+			const portraits = resolved.filter((item) => item.orientation === "portrait").map((item) => item.src);
+			const landscapes = resolved.filter((item) => item.orientation === "landscape").map((item) => item.src);
+			const others = resolved
+				.filter((item) => item.orientation === "square" || item.orientation === "unknown")
+				.map((item) => item.src);
+
+			const balanced = [];
+			let portraitIndex = 0;
+			let landscapeIndex = 0;
+
+			const startWithPortrait = portraits.length >= landscapes.length;
+			let usePortraitTurn = startWithPortrait;
+
+			while (portraitIndex < portraits.length || landscapeIndex < landscapes.length) {
+				if (usePortraitTurn && portraitIndex < portraits.length) {
+					balanced.push(portraits[portraitIndex]);
+					portraitIndex += 1;
+				} else if (!usePortraitTurn && landscapeIndex < landscapes.length) {
+					balanced.push(landscapes[landscapeIndex]);
+					landscapeIndex += 1;
+				} else if (portraitIndex < portraits.length) {
+					balanced.push(portraits[portraitIndex]);
+					portraitIndex += 1;
+				} else if (landscapeIndex < landscapes.length) {
+					balanced.push(landscapes[landscapeIndex]);
+					landscapeIndex += 1;
+				}
+				usePortraitTurn = !usePortraitTurn;
 			}
-			leftIndex += 1;
-			rightIndex -= 1;
-		}
 
-		return orderedPhotos;
+			const finalPhotos = [...balanced, ...others];
+			if (!isCancelled) {
+				setMixedPhotos(finalPhotos);
+			}
+		};
+
+		buildMixedOrder();
+
+		return () => {
+			isCancelled = true;
+		};
 	}, [photos]);
 
 	return (
 		<div className="relative min-h-screen w-full overflow-hidden bg-black flex flex-col items-center justify-start py-10">
 			<BackgroundMusic audioSrc="/Musica_1_Ed_Sheran.mp3" initialVolume={0.2} />
+             <div className="z-0 opacity-30">
+                    <StarAnimation />
+                </div>
 
 			<div className="fixed inset-0 z-0 w-full h-full pointer-events-none">
 				<img
@@ -124,7 +172,7 @@ export default function Galeria() {
 				</div>
 
 				<div className="columns-2 md:columns-3 gap-3 sm:gap-4">
-					{mixedPhotos.map((photo, index) => (
+					{(mixedPhotos.length > 0 ? mixedPhotos : photos).map((photo, index) => (
 						<button
 							key={`${photo}-${index}`}
 							type="button"
