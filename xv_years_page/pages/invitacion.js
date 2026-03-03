@@ -23,7 +23,7 @@ const cormorantGaramond = Cormorant_Garamond({
 
 export default function Invitacion() {
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
-    const photos = ["/0N1A0041.jpg", "/0N1A0081.jpg", "/0N1A0152.jpg", "/0N1A0164.jpg", "/0N1A0167.jpg", "/0N1A0188.jpg", "/0N1A9988.jpg","/0N1A0172.jpg"];
+    const photos = ["/0N1A0041.jpg", "/0N1A0152.jpg", "/0N1A0164.jpg", "/0N1A9977.jpg", "/0N1A0122.jpg", "/0N1A9988.jpg","/0N1A0167.jpg"];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -291,18 +291,21 @@ export default function Invitacion() {
                     <h1 className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-4xl xl:text-5xl max-w-3xl mb-2 ${cormorantGaramond.className}`}>
                             Momentos Especiales
                         </h1>
-                      <div className="w-full h-10/12 sm:h-72 md:h-80 lg:h-96 z-10 relative mx-auto overflow-hidden rounded-lg">
-                    <div className="relative w-full h-full flex">
+                      <div className="w-full h-10/12 sm:h-72 md:h-80 lg:h-96 z-10 relative mx-auto overflow-hidden rounded-lg bg-black/5">
+                    <div
+                        className="relative w-full h-full flex gap-2 transition-transform duration-1000 ease-in-out"
+                        style={{
+                            transform: `translateX(calc(${-currentPhotoIndex * 100}% - ${currentPhotoIndex * 8}px))`
+                        }}
+                    >
                         {photos.map((photo, index) => (
-                            <img
-                                key={index}
-                                src={photo}
-                                alt={`Carrusel ${index}`}
-                                className="w-full object-contain shrink-0 transition-transform duration-1000 ease-in-out"
-                                style={{
-                                    transform: `translateX(calc(${-currentPhotoIndex * 100}%))`
-                                }}
-                            />
+                            <div key={index} className="w-full h-full shrink-0 flex items-center justify-center">
+                                <img
+                                    src={photo}
+                                    alt={`Carrusel ${index}`}
+                                    className="max-w-full max-h-full object-contain object-center"
+                                />
+                            </div>
                         ))}
                     </div>
                 </div>
