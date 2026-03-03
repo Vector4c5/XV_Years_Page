@@ -148,7 +148,7 @@ export default function Invitacion() {
                         </h1>
                         <div className="flex flex-col items-center justify-center w-full gap-4 p-1 border-b-2 border-vic-1">
                             <div className="flex items-center justify-center">
-                                <GiChurch size={90} />
+                                <GiChurch size={90} className="text-black"/>
                             </div>
                             <div className="flex flex-col items-center justify-center px-4 py-2 rounded">
                                 <h1 className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${cormorantGaramond.className}`}>
@@ -176,7 +176,7 @@ export default function Invitacion() {
                         </div>
                         <div className="flex flex-col items-center justify-center w-full gap-4 p-1 pt-5 border-b-2 border-vic-1">
                             <div className="flex items-center justify-center">
-                                <FaGlassCheers size={90} />
+                                <FaGlassCheers size={90} className="text-black"/>
                             </div>
                             <div className="flex flex-col items-center justify-center px-4 py-2 rounded">
                                 <h1 className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${cormorantGaramond.className}`}>
@@ -219,7 +219,7 @@ export default function Invitacion() {
                         </h1>
                         <div className="flex flex-col items-center justify-center w-full gap-4 p-1 border-b-2 border-vic-1">
                             <div className="flex items-center justify-center">
-                                <LuVenetianMask size={90} />
+                                <LuVenetianMask size={90} className="text-black" />
                             </div>
                             <div className="flex flex-col items-center justify-center px-4 py-2 rounded gap-3">
 
@@ -259,7 +259,7 @@ export default function Invitacion() {
                         </h1>
                         <div className="flex flex-col items-center justify-center w-full gap-4 p-1">
                             <div className="flex items-center justify-center">
-                                <FaHeartCircleCheck size={90} />
+                                <FaHeartCircleCheck size={90} className="text-black" />
                             </div>
                             <div className="flex flex-col items-center justify-center px-4 py-2 rounded">
 
