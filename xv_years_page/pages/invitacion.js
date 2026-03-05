@@ -9,6 +9,8 @@ import { FaGlassCheers } from "react-icons/fa";
 import { LuVenetianMask } from "react-icons/lu";
 import { FaTimes } from "react-icons/fa";
 import { FaHeartCircleCheck } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
+
 import { useState, useEffect } from "react";
 
 const tangerine = Tangerine({
@@ -23,7 +25,7 @@ const cormorantGaramond = Cormorant_Garamond({
 
 export default function Invitacion() {
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
-    const photos = ["/0N1A0041.jpg", "/0N1A0152.jpg", "/0N1A0164.jpg", "/0N1A9977.jpg", "/0N1A0122.jpg", "/0N1A9988.jpg","/0N1A0167.jpg"];
+    const photos = ["/0N1A0041.jpg", "/0N1A0152.jpg", "/0N1A0164.jpg", "/0N1A9977.jpg", "/0N1A0122.jpg", "/0N1A9988.jpg", "/0N1A0167.jpg"];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -60,16 +62,16 @@ export default function Invitacion() {
                 </div>
                 <div
                     className="absolute inset-0 z-10 flex flex-col items-center justify-between p-4 sm:p-6 md:p-8">
-                        <div className="w-full h-auto flex flex-col items-center justify-center">
-                            <div className="flex items-center justify-center">
-                        <Countdown targetDate="2026-03-28T18:00:00" />
-                    </div>
-                    <p className={`text-2xl sm:text-xl md:text-2xl lg:text-4xl text-vic-1 ${tangerine.className}`}>
-                        28 de marzo de 2026
+                    <div className="w-full h-auto flex flex-col items-center justify-center">
+                        <div className="flex items-center justify-center">
+                            <Countdown targetDate="2026-03-28T18:00:00" />
+                        </div>
+                        <p className={`text-2xl sm:text-xl md:text-2xl lg:text-4xl text-vic-1 ${tangerine.className}`}>
+                            28 de marzo de 2026
                         </p>
 
-                        </div>
-                    
+                    </div>
+
                     <div className="flex flex-col items-center justify-center pb-8">
                         <h2 className={`text-5xl sm:text-4xl md:text-5xl lg:text-8xl xl:text-9xl text-center font-bold text-white border-b-2 border-white ${tangerine.className}`}>
                             Una nueva etapa comienza, y quiero compartirla contigo
@@ -148,7 +150,7 @@ export default function Invitacion() {
                         </h1>
                         <div className="flex flex-col items-center justify-center w-full gap-4 p-1 border-b-2 border-vic-1">
                             <div className="flex items-center justify-center">
-                                <GiChurch size={90} className="text-black"/>
+                                <GiChurch size={90} className="text-black" />
                             </div>
                             <div className="flex flex-col items-center justify-center px-4 py-2 rounded">
                                 <h1 className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${cormorantGaramond.className}`}>
@@ -176,7 +178,7 @@ export default function Invitacion() {
                         </div>
                         <div className="flex flex-col items-center justify-center w-full gap-4 p-1 pt-5 border-b-2 border-vic-1">
                             <div className="flex items-center justify-center">
-                                <FaGlassCheers size={90} className="text-black"/>
+                                <FaGlassCheers size={90} className="text-black" />
                             </div>
                             <div className="flex flex-col items-center justify-center px-4 py-2 rounded">
                                 <h1 className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${cormorantGaramond.className}`}>
@@ -208,6 +210,7 @@ export default function Invitacion() {
                     </div>
                 </div>
             </div>
+
             <div className="relative w-full overflow-hidden py-10 sm:py-10 md:py-12">
                 <div
                     className="bg-white w-11/12 z-10 relative mx-auto flex flex-col items-start justify-center p-2 sm:p-6 md:p-8 
@@ -239,6 +242,33 @@ export default function Invitacion() {
                                 <div className="w-10 h-10 rounded-full bg-blue-300 border-2 border-vic-1" />
                                 <div className="w-10 h-10 rounded-full bg-gray-300 border-2 border-vic-1" />
                                 <FaTimes size={40} className="text-vic-1" />
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="relative w-full overflow-hidden py-10 sm:py-10 md:py-12">
+                <div
+                    className="bg-white w-11/12 z-10 relative mx-auto flex flex-col items-start justify-center p-2 sm:p-6 md:p-8 
+                    shadow-xl rounded-lg">
+                    <div
+                        className="flex flex-col items-center justify-start w-full h-auto border-2 border-amber-300 px-4 py-4 gap-2">
+                        <h1 className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-4xl xl:text-5xl max-w-3xl mb-2 ${cormorantGaramond.className}`}>
+                            Regalos
+                        </h1>
+                        <div className="flex flex-col items-center justify-center w-full gap-4 p-1 pb-3">
+                            <div className="flex items-center justify-center">
+                                <IoIosMail size={90} className="text-black" />
+                            </div>
+                            <div className="flex flex-col items-center justify-center px-4 py-2 rounded gap-3">
+                                <p className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
+                                    Tu presencia en este día tan especial es el regalo más valioso.
+                                    Pero si deseas acompañarlo con un detalle adicional,
+                                    una lluvia de sobres será recibida con cariño y gratitud.
+                                </p>
                             </div>
                         </div>
                         <div>
@@ -289,39 +319,39 @@ export default function Invitacion() {
                     shadow-xl rounded-lg">
                 <div className="flex flex-col items-center justify-start w-full h-auto border-2 border-amber-300 px-4 py-4 gap-3">
                     <h1 className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-4xl xl:text-5xl max-w-3xl mb-2 ${cormorantGaramond.className}`}>
-                            Momentos Especiales
-                        </h1>
-                      <div className="w-full h-10/12 sm:h-72 md:h-80 lg:h-96 z-10 relative mx-auto overflow-hidden rounded-lg bg-black/5">
-                    <div
-                        className="relative w-full h-full flex gap-2 transition-transform duration-1000 ease-in-out"
-                        style={{
-                            transform: `translateX(calc(${-currentPhotoIndex * 100}% - ${currentPhotoIndex * 8}px))`
-                        }}
-                    >
-                        {photos.map((photo, index) => (
-                            <div key={index} className="w-full h-full shrink-0 flex items-center justify-center">
-                                <img
-                                    src={photo}
-                                    alt={`Carrusel ${index}`}
-                                    className="max-w-full max-h-full object-contain object-center"
-                                />
-                            </div>
-                        ))}
+                        Momentos Especiales
+                    </h1>
+                    <div className="w-full h-10/12 sm:h-72 md:h-80 lg:h-96 z-10 relative mx-auto overflow-hidden rounded-lg bg-black/5">
+                        <div
+                            className="relative w-full h-full flex gap-2 transition-transform duration-1000 ease-in-out"
+                            style={{
+                                transform: `translateX(calc(${-currentPhotoIndex * 100}% - ${currentPhotoIndex * 8}px))`
+                            }}
+                        >
+                            {photos.map((photo, index) => (
+                                <div key={index} className="w-full h-full shrink-0 flex items-center justify-center">
+                                    <img
+                                        src={photo}
+                                        alt={`Carrusel ${index}`}
+                                        className="max-w-full max-h-full object-contain object-center"
+                                    />
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
-                <div className="w-full flex items-center justify-center mt-2">
-                    <Link
-                        href="/galeria"
-                        className={`group px-8 sm:px-6 py-2.5 bg-vic-4 text-white rounded-lg sm:rounded-xl ${cormorantGaramond.className} border border-vic-1 sm:border-2 transform transition-all duration-300 ease-out hover:scale-110 hover:bg-vic-3 hover:text-black`}
-                    >
-                        <p className={`text-white group-hover:text-black transition-colors duration-300 text-3xl sm:text-base md:text-lg lg:text-3xl xl:text-4xl text-center ${tangerine.className}`}>
-                            Ver Galería Completa
-                        </p>
-                    </Link>
-                </div>
+                    <div className="w-full flex items-center justify-center mt-2">
+                        <Link
+                            href="/galeria"
+                            className={`group px-8 sm:px-6 py-2.5 bg-vic-4 text-white rounded-lg sm:rounded-xl ${cormorantGaramond.className} border border-vic-1 sm:border-2 transform transition-all duration-300 ease-out hover:scale-110 hover:bg-vic-3 hover:text-black`}
+                        >
+                            <p className={`text-white group-hover:text-black transition-colors duration-300 text-3xl sm:text-base md:text-lg lg:text-3xl xl:text-4xl text-center ${tangerine.className}`}>
+                                Ver Galería Completa
+                            </p>
+                        </Link>
+                    </div>
 
                 </div>
-              
+
             </div>
         </div>
     );
