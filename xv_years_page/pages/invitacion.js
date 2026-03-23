@@ -227,10 +227,10 @@ export default function Invitacion() {
                             <div className="flex flex-col items-center justify-center px-4 py-2 rounded gap-3">
 
                                 <p className={`text-black text-5xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
-                                    Etiqueta:
+                                    Codigo De Vestimenta:
                                 </p>
                                 <p className={`text-black text-4xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
-                                    Formal.
+                                    Formal
                                 </p>
                                 <p className={`text-black text-3xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
                                     Les pedimos amablemente no utilizar tonos rosa, azul marino ni plateado.
