@@ -160,14 +160,14 @@ export default function Invitacion() {
                                     6:00 PM
                                 </p>
                                 <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
-                                    Parroquia San Marcos Evangelista
+                                    Santuario de Guadalupe
                                 </p>
                                 <p className={`text-black text-2xl text-center sm:text-base md:text-lg lg:text-3xl xl:text-4xl max-w-3xl ${tangerine.className}`}>
-                                    Ave. 5 y, Vicente Guerrero, Centro, 33620 Saucillo, Chih.
+                                    Del Santuario 79, Guadalupe, 33624 Saucillo, Chih.
                                 </p>
 
                                 <Link
-                                    href="https://maps.app.goo.gl/sfFrAUgeguQ1roia6?g_st=aw"
+                                    href="https://maps.app.goo.gl/4gT32Q8hADnqsKus8"
                                     className={`px-10 sm:px-5 sm:py-2.5 md:px-6 md:py-3 bg-vic-4 text-white text-xl sm:text-base md:text-lg lg:text-3xl xl:text-4xl 
                                     rounded-lg sm:rounded-xl mt-2 sm:mt-3 md:mt-4 ${cormorantGaramond.className} border border-vic-1 sm:border-2
                                     transform transition-all duration-300 ease-out hover:scale-110 hover:bg-vic-4 hover:text-black`}
